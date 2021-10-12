@@ -1,48 +1,30 @@
-# U10-2 | NumberDelimiter
+# U10-1 | Delete Character
 
-Beim Schreiben von besonders großen Zahlen ist es üblich, ein
-Tausender-Trennzeichen zu benutzen, um die Ziffernfolge in Dreiergruppen zu unterteilen. Dieses Trennzeichen kann ein Leerzeichen, ein Komma oder
-ein Punkt sein.
+Schreiben Sie eine Klasse `Remover `mit einer statischen Methode
 
-Eine Million würde zum Beispiel folgendermaßen geschrieben:
+`public static String removeOccurrences(String str, char ch)`
 
-1,000,000
+die alle Zeichen `ch `aus `str `löscht und das Ergebnis wie folgend
+zurückgibt:
 
-1.000.000
+```
+Remover.removeOccurrences("This is a test", `t`)
+```
 
-1 000 000
+**gibt zurück:** `This is a es`
 
-Um die Darstellung solcher Zahlen zu vereinfachen, sollen Sie nun eine
-Klasse `CommaGenerator ` implementieren, welche ein bei der Objekterstellung
-übergebenes Trennzeichen als Instanzvariable abspeichert, auf die bei
-der Verarbeitung der Ziffernfolgen zugegriffen wird. Die erlaubten
-Trennzeichen sollen die oben genutzten sein (Komma, Punkt, Leerzeichen).
-Benutzen Sie hierzu folgenden Klassenrumpf:
+```
+Remover.removeOccurrences("Summer is here", `e`)
 
-    public class CommaGenerator{
+```
 
-        public static final int SEPARATOR_COMMA = 0;
-        public static final int SEPARATOR_POINT = 1;
-        public static final int SEPARATOR_SPACE = 2;
-        
-        private char separator;
+**gibt zurück:** `Summr is hr`
 
-        // Konstruktor und Methoden hier implementieren
+```
+Remover.removeOccurrences("—0—", `-`)
+ ```
+ 
+ **gibt zurück:** `0`
 
-    }
-
-Achtung: Nutzen Sie bei Objekterzeugung die statischen Variablen (vgl.
-Enumeration-Prinzip) der Klasse `CommaGenerator ` oder nutzen Sie den
-Enum-Datentyp (vgl. Vorlesung) und übergeben Sie diese dem Konstruktor, z.B. so:
-
-    CommaGenerator commaGenerator = new CommaGenerator(CommaGenerator.SEPARATOR_SPACE);
-
-Im Konstruktor lesen Sie den übergebenen Wert und setzen das
-Trennzeichen für das Objekt entsprechend des Parameters. Wird kein
-gültiges Trennzeichen übergeben, soll das Komma verwendet werden. Ein
-Objekt dieser Klasse soll nun also mit der Methode
-
-`public String addSeparatorToNumericString(String digits)`
-
-einen übergebenen Text aus Zahlen mit Trennzeichen an jeder dritten
-Position von rechts zurückgeben.
+Beachten Sie, dass Sie kein Objekt einer Klasse erstellen müssen, wenn
+Sie lediglich statische Methoden (wie in diesem Fall) nutzen.
