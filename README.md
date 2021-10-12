@@ -1,0 +1,1 @@
+# U10-Textverarbeitung-1-DeleteCharacter
