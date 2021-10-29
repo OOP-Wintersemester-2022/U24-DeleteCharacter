@@ -1,4 +1,4 @@
-# U10-1 | Delete Character
+# U24 | Delete Character
 
 Schreiben Sie eine Klasse `Remover `mit einer statischen Methode
 
