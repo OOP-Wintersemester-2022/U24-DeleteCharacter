@@ -1,6 +1,6 @@
 {
     "title": "U24 | Delete Character",
-    "abstract": "Drei kleine Aufgaben zur Textverarbeitung.",
+    "abstract": "Eine kleine Aufgabe zur Textverarbeitung: Löschen eines bestimmten Zeichens in einem String.",
     "hasStarterCode": false,
     "hasSolutionCode": true,
     "solutionComment": "Lösungsvorschlag zur Aufgabenstellung",
