@@ -1,5 +1,5 @@
 {
-    "title": "U24 | Delete Character",
+    "title": "U24 | DeleteCharacter",
     "abstract": "Eine kleine Aufgabe zur Textverarbeitung: Löschen eines bestimmten Zeichens in einem String.",
     "hasStarterCode": false,
     "hasSolutionCode": true,
